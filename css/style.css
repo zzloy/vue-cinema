@@ -11,6 +11,8 @@
     border: none;
     user-select: none;
     font-family: CB;
+    scroll-behavior: smooth;
+
 }
 
 .banner {
@@ -80,12 +82,12 @@
 }
 
 .header-content {
-    min-height: 840px;
+    min-height: 100vh;
     display: flex;
     background: url(../img/header-bg.jpg) rgba(7, 15, 25, 0.75);
     background-blend-mode: darken;
     background-size: cover;
-    background-position: center;
+
 }
 
 h1 {
@@ -218,6 +220,7 @@ body {
 .films-cards {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .films {
@@ -279,43 +282,57 @@ video {
     line-height: 22px;
     font-family: CB;
 }
-.coll-cards__card a{
+
+.coll-cards__card a {
     display: block;
     transition: 0.5s;
 }
-.coll-cards__card:hover a{
+
+.coll-cards__card:hover a {
     transform: rotateX(360deg) scale(1.3);
 }
-.boxes-1, .boxes-2{
+
+.boxes-1,
+.boxes-2 {
     display: block;
     transition: 700ms;
 }
-.boxes-1{
+
+.boxes-1 {
     transform: translateY(-110%) rotateY(360deg);
 }
-.boxes-2{
+
+.boxes-2 {
     transform: translateY(110%) rotateY(-360deg);
 }
-.coll-cards__card:hover .boxes-1, .coll-cards__card:hover .boxes-2{
+
+.coll-cards__card:hover .boxes-1,
+.coll-cards__card:hover .boxes-2 {
     transform: translateY(0) rotateY(0);
 }
 
-.coll-cards__card:nth-child(2){
+.coll-cards__card:nth-child(2) {
     background: linear-gradient(270deg, rgba(7, 15, 25, 0.56) 0%, rgba(49, 114, 9, 0.56) 100%), url(../img/coll-2.jpg);
     background-size: cover;
 }
-.coll-cards__card:nth-child(3){
+
+.coll-cards__card:nth-child(3) {
     background: linear-gradient(270deg, rgba(7, 15, 25, 0.56) 0%, rgba(49, 114, 9, 0.56) 100%), url(../img/coll-3.jpg);
     background-size: cover;
 }
-.coll-cards{
+
+.coll-cards {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.coll{
+
+.coll {
     padding: 60px 15px;
 }
-.series-cards__main{
+
+.series-cards__main {
     text-align: center;
     color: white;
     padding: 103px 0;
@@ -323,107 +340,110 @@ video {
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 10.86%, rgba(11, 11, 11, 0.6) 110.86%), url(../img/serias1.jpg);
+    background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 10.86%, rgba(11, 11, 11, 0.6) 110.86%), url(../img/series-1.jpg);
     border-radius: 6px;
     background-size: cover;
+    margin-bottom: 30px;
+    background-position: center;
 }
-.series-cards__main p{
+
+.series-cards__main p {
     max-width: 1116px;
     line-height: 24px;
     font-family: CR;
 }
 
-.series-cards__main h3{
+.series-cards__main h3 {
     font-size: 40px;
     line-height: 45px;
 }
 
-.series-second__cards
-{
-    margin-top: 30px;
-    display: flex;
-}
-
-.series-second__cards-main{
-    margin-right: 30px;
+.series-second__cards-main {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 143px 0 163px 0;
     color: white;
     gap: 30px;
-    background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100%), url(../img/serias2.jpg );
+    background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100%), url(../img/series-2.jpg);
     border-radius: 6px;
     width: 558px;
     background-size: cover;
+    background-position: center;
 }
 
-.series-second__cards-mini
-{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px 30px;
-    width: 558px;
-}
-
-.series-second__cards-mini div
-{
-    color: white;
+.series-second__cards-mini div {
+    width: 264px;
+    padding: 45px 0 56px 0;
+    background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100%), url(../img/series-3.jpg);
+    border-radius: 6px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
     gap: 20px;
-    width: 264px;
-    padding: 45px 0 56px 0;
-    background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100%), url(../img/serias3.jpg);
-    border-radius: 6px;
     background-size: cover;
-    transition: 0.5s;
+    transition: 500ms;
 }
 
-.series-second__cards-mini div:nth-child(2)
-{
-    background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100%), url(../img/serias4.jpg);
-    background-size: cover;
-}
-.series-second__cards-mini div:nth-child(3)
-{
-    background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100%), url(../img/serias5.jpg);
-    background-size: cover;
-}
-.series-second__cards-mini div:nth-child(4)
-{
-    background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100%), url(../img/serias6.jpg);
+.series-second__cards-mini div:nth-child(2) {
+    background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100%), url(../img/series-4.jpg);
     background-size: cover;
 }
 
-.series-second__cards-mini div:hover
-{
+.series-second__cards-mini div:nth-child(3) {
+    background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100%), url(../img/series-5.jpg);
+    background-size: cover;
+}
+
+.series-second__cards-mini div:nth-child(4) {
+    background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100%), url(../img/series-6.jpg);
+    background-size: cover;
+}
+
+.series-second__cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.series-second__cards-mini {
+    display: flex;
+    flex-wrap: wrap;
+    width: 558px;
+    gap: 20px 30px;
+    justify-content: center;
+}
+
+.series-second__cards-mini div:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
 
-main
-{
-    margin-bottom: 60px;
+main {
+    padding-bottom: 60px;
 }
 
-.footer-content
-{
-    display: flex;
+.footer {
+    background: linear-gradient(90deg, #FF8C30 0%, #9F4700 100%);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+    padding: 24px 0;
     color: white;
+}
+
+.footer-content {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.footer
-{
-    padding: 24px 0;
-    background: linear-gradient(90deg, #FF8C30 0%, #9F4700 100%);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+.footer a {
+    margin-right: 50px;
 }
 
-.footer-content div{
-    display: flex;
-    gap: 50px;
+.burger {
+    display: none;
+    font-size: 30px;
+    color: white;
 }
