@@ -1,0 +1,174 @@
+@media (max-width: 1800px){
+    .section1>img 
+    {
+        width: 1400px;
+    }
+}
+@media (max-width: 1400px){
+    .absolute img
+    {
+        width: 800px;
+    }
+
+    .section1
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .info-text p
+    {   
+        width: unset;
+    }
+}
+@media (max-width: 1200px){
+    .header-title
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    .header-info
+    {
+        padding-top: 0;
+        flex-direction: unset;
+    }
+
+    .section1>img 
+    {
+        width: 1000px;
+    }
+
+    .absolute img
+    {
+        z-index: 500;
+        width: 800px;
+        animation: earth 100s infinite;
+    }
+
+    .absolute
+    {
+        z-index: 0;
+        position: absolute;
+        bottom: -250px;
+        left: 120px;
+    }
+
+    .main h1
+    {
+        padding-top: 180px;
+    }
+
+}
+
+@media (max-width: 1090px){
+    .absolute img
+    {
+        width: 700px;
+    }
+
+    .section1
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:890px){
+    .absolute img
+    {
+        width: 600px;
+    }
+
+    .section1
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .main h1
+    {
+        padding-top: 250px;
+    }
+
+    .section1>img 
+    {
+        width: 500px;
+    }
+}
+@media (max-width:830px){
+
+    .section1>img 
+    {
+        width: 1000px;
+    }
+
+    .absolute img
+    {
+        margin-top: -1000px;
+        width: 500px;
+    }
+
+    .header-title h1
+    {
+        font-size: 50px;
+    }
+    .header-title p
+    {
+        font-size: 18px;
+    }
+}
+@media (max-width:780px){
+
+    .section1>img 
+    {
+        width: 800px;
+    }
+
+    .absolute img
+    {
+        margin-top: -1000px;
+        width: 500px;
+    }
+
+}
+
+
+@media (max-width: 700px){
+    .absolute img
+    {
+        width: 500px;
+    }
+
+    .absolute
+    {
+        z-index: 0;
+        position: absolute;
+        bottom: -250px;
+        left: 50px;
+    }
+
+}
+@media (max-width: 600px){
+    .info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        height: 500px;
+    }
+
+    .absolute img
+    {
+        width: 400px;
+    }
+
+}
