@@ -1,3 +1,6 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css);
+
+
 *
 {
     box-sizing: border-box;
@@ -124,6 +127,7 @@ p
 
 .main
 {
+    height: 2000px;
     background: rgb(10,13,47);
 background: linear-gradient(0deg, rgba(10,13,47,1) 19%, rgba(1,0,3,1) 100%);
 }
@@ -145,6 +149,7 @@ background: linear-gradient(0deg, rgba(10,13,47,1) 19%, rgba(1,0,3,1) 100%);
     display: flex;
     gap: 30px;
     height: 90vh;
+    
 }
 
 .main h1
@@ -262,6 +267,7 @@ background: linear-gradient(0deg, rgba(10,13,47,1) 19%, rgba(1,0,3,1) 100%);
 }
 
 .info {
+    flex-wrap: wrap;
     margin-top: 100px;
     width: 550px;
     height: 650px;
@@ -279,6 +285,7 @@ background: linear-gradient(0deg, rgba(10,13,47,1) 19%, rgba(1,0,3,1) 100%);
 
 .info-text
 {
+    flex-wrap: wrap;
     display: flex;
     gap: 30px;
     flex-direction: column;
@@ -290,4 +297,11 @@ background: linear-gradient(0deg, rgba(10,13,47,1) 19%, rgba(1,0,3,1) 100%);
 .info-text p
 {
     width: 800px;
+}
+
+.burger
+{
+    color: white;
+    display: none;
+    font-size: 30px;
 }
