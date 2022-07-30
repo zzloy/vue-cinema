@@ -35,7 +35,7 @@
 
     .header-info
     {
-        padding-top: 0;
+        padding-top:150px;
         flex-direction: unset;
     }
 
@@ -64,6 +64,11 @@
         padding-top: 180px;
     }
 
+    .bar-manu
+    {
+        display: flex;
+        gap: 180px;
+    }
 }
 
 @media (max-width: 1090px){
@@ -78,6 +83,11 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+    }
+    .bar-manu
+    {
+        display: flex;
+        gap: 100px;
     }
 }
 
@@ -107,10 +117,6 @@
 }
 @media (max-width:830px){
 
-    .main
-    {
-        height: 3000px;
-    }
     .section1>img 
     {
         width: 1000px;
@@ -133,6 +139,11 @@
 }
 @media (max-width:780px){
 
+    .bar-manu
+    {
+        display: flex;
+        gap: 80px;
+    }
     .section1>img 
     {
         width: 800px;
@@ -142,6 +153,39 @@
     {
         margin-top: -1000px;
         width: 500px;
+    }
+
+    .bar-manu
+    {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.647);
+        gap: 50px;
+        transition: 0.5s;
+        transform: translateX(100%);
+    }
+
+    .burger
+    {
+        display: block;
+        padding:35px 20px 15px 20px;
+    }
+
+    
+    .burger:hover ~ .bar-manu
+    {
+        display: flex;
+        flex-direction: column;
+        transform: translateX(0%);
+        font-size: 20px;
+        font-family: SR;
+        line-height: 24px;
     }
 
 }
@@ -159,6 +203,12 @@
         position: absolute;
         bottom: -250px;
         left: 50px;
+    }
+
+    .bar-manu
+    {
+        display: flex;
+        gap: 50px;
     }
 
 }
@@ -184,12 +234,17 @@
         width: unset;
     }
 
+    .header-nav
+    {
+        padding: 10px 15px;
+    }
+
     .section1>img 
     {
         width: 500px;
     }
 
-    .nav
+    .bar-manu
     {
         position: fixed;
         flex-direction: column;
@@ -221,7 +276,7 @@
     }
 
     
-    .burger:hover ~ .nav
+    .burger:hover ~ .bar-manu
     {
         transform: translateX(0%);
         font-size: 20px;
