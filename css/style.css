@@ -318,3 +318,9 @@ p
 {
     padding-bottom: 50px;
 }
+
+.bar-manu
+{
+    display: flex;
+    gap: 350px;
+}
